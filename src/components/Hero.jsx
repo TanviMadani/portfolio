@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="md:w-2/5 flex justify-center relative">
           <div className="relative mx-auto">
             {/* Circular image */}
-            <div className="relative z-10 overflow-hidden w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full border-4 border-[#272930]">
+            <div className="relative z-10 overflow-hidden w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full">
               <img 
                 src={avatar} 
                 alt="Profile" 

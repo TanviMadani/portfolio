@@ -36,7 +36,7 @@ const Resume = () => {
   ];
 
   return (
-    <div id="resume" className="py-16 bg-[#17191A]">
+    <div id="resume" className="py-16 bg-[#17191A] jagged-border jagged-border-dark">
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#B8B8CA] mb-10 text-center">
           Resume

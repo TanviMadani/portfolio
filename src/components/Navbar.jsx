@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <nav className="fixed top-0 left-0 bottom-0 z-10 w-20 md:w-24 bg-[#272930] flex flex-col items-center justify-center">
+    <nav className="fixed top-0 left-0 bottom-0 z-10 w-20 md:w-24 flex flex-col items-center justify-center" style={{ backgroundColor: 'var(--accent)' }}>
       {/* Navigation Links */}
       <div className="hidden md:flex flex-col space-y-12">
         <a href="#" className="text-[#B8B8CA] hover:text-white transition-colors duration-300 flex flex-col items-center">
@@ -57,22 +57,23 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-[#17191A] border-r border-[#121315] py-4 z-20">
+        <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 py-4 z-20" style={{ backgroundColor: 'var(--background)', borderRight: '1px solid var(--border)' }}>
           <button 
-            className="absolute top-4 right-4 text-[#B8B8CA] hover:text-white"
+            className="absolute top-4 right-4 hover:text-white"
             onClick={() => setIsOpen(false)}
+            style={{ color: 'var(--text)' }}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
           <div className="flex flex-col space-y-6 px-6 mt-16">
-            <a href="#" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#about" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>About</a>
-            <a href="#skills" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>Skills</a>
-            <a href="#projects" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>Projects</a>
-            <a href="#resume" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>Resume</a>
-            <a href="#contact" className="text-[#B8B8CA] hover:text-white py-2" onClick={() => setIsOpen(false)}>Contact</a>
+            <a href="#" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Home</a>
+            <a href="#about" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>About</a>
+            <a href="#skills" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Skills</a>
+            <a href="#projects" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Projects</a>
+            <a href="#resume" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Resume</a>
+            <a href="#contact" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Contact</a>
           </div>
         </div>
       )}

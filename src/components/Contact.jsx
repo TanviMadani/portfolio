@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="contact" className="py-16 bg-[#272930]">
+    <div id="contact" className="py-16 bg-[#17191A] jagged-border jagged-border-dark">
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#B8B8CA] mb-10 text-center">
           Get In Touch
@@ -23,7 +23,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-[#B8B8CA]/70 text-sm">Email</p>
-                  <p className="text-[#B8B8CA]">tanvi.madani@example.com</p>
+                  <p className="text-[#B8B8CA]">tanvimadani88888@google.com</p>
                 </div>
               </div>
               
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-[#B8B8CA]/70 text-sm">Phone</p>
-                  <p className="text-[#B8B8CA]">+91 98765 43210</p>
+                  <p className="text-[#B8B8CA]">+91 93137 88080</p>
                 </div>
               </div>
             </div>

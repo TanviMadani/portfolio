@@ -2,12 +2,12 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div id="about" className="bg-[#17191A] py-16 px-4 md:px-16">
-      <div className="max-w-5xl mx-auto">
+    <div id="about" className="bg-[#17191A] py-16 px-4 md:pl-24 md:pr-8 jagged-border jagged-border-dark overflow-hidden">
+      <div className="max-w-full mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-[#B8B8CA] mb-8 border-b border-[#272930] pb-4">About Me</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+          <div className="order-2 md:order-1">
             <p className="text-[#B8B8CA] mb-6">
               Hello! I'm Tanvi Madani, a pre-final year Computer Science Engineering student at Nirma University, Ahmedabad. 
               I'm passionate about creating elegant solutions to complex problems through code.
@@ -23,7 +23,7 @@ const About = () => {
             </p>
           </div>
           
-          <div>
+          <div className="order-1 md:order-2">
             <h3 className="text-xl font-semibold text-[#B8B8CA] mb-4">Education</h3>
             
             <div className="relative border-l-2 border-[#272930] pl-6 pb-6 space-y-10">

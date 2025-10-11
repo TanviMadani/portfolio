@@ -7,8 +7,26 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
+import ThemeToggle from './components/ThemeToggle'
+import MobileNav from './components/MobileNav'
+import { applyTheme } from './theme'
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme-mode');
+    return savedTheme || 'dark';
+  });
+
+  // Apply theme when it changes
+  useEffect(() => {
+    applyTheme(theme);
+    document.body.className = theme;
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
+  };
+
   // Smooth scrolling effect
   useEffect(() => {
     // Add smooth scrolling to all links
@@ -46,9 +64,11 @@ function App() {
   }, []);
 
   return (
-    <div className="relative bg-[#121315]">
+    <div className={`relative overflow-x-hidden ${theme}`} style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
+      <ThemeToggle onToggle={toggleTheme} currentTheme={theme} />
       <Navbar />
-      <div className="ml-0 md:ml-24">
+      <MobileNav />
+      <div className="ml-0 md:ml-24 w-full overflow-x-hidden pb-16 md:pb-0">
         <Hero />
         <About />
         <Skills />
