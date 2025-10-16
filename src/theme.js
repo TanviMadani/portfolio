@@ -1,22 +1,22 @@
 // Theme configuration based on the provided color palette
 export const theme = {
   light: {
-    primary: '#DA0000',     // Bright Red
-    secondary: '#830F10',   // Dark Red
-    accent: '#574D4C',      // Gray
-    background: '#FFFFFF',  // White
-    text: '#000000',        // Black
-    cardBg: '#f5f5f5',
-    border: '#e0e0e0',
+    primary: '#87CEEB',     // Sky Blue
+    secondary: '#5F9EA0',   // Cadet Blue
+    accent: '#B0E0E6',      // Powder Blue
+    background: '#FFFAF0',  // Whitish Cream (Floral White)
+    text: '#333333',        // Dark Gray
+    cardBg: '#FFF8DC',      // Cornsilk (Cream)
+    border: '#E6E6FA',      // Lavender
   },
   dark: {
-    primary: '#DA0000',     // Bright Red
-    secondary: '#830F10',   // Dark Red
-    accent: '#574D4C',      // Gray
-    background: '#000000',  // Black
+    primary: '#1E90FF',     // Dodger Blue
+    secondary: '#4169E1',   // Royal Blue
+    accent: '#00008B',      // Dark Blue
+    background: '#000033',  // Navy Blue (Dark)
     text: '#FFFFFF',        // White
-    cardBg: '#121315',
-    border: '#272930',
+    cardBg: '#000055',      // Darker Navy Blue
+    border: '#191970',      // Midnight Blue
   }
 };
 

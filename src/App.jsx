@@ -67,8 +67,7 @@ function App() {
     <div className={`relative overflow-x-hidden ${theme}`} style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
       <ThemeToggle onToggle={toggleTheme} currentTheme={theme} />
       <Navbar />
-      <MobileNav />
-      <div className="ml-0 md:ml-24 w-full overflow-x-hidden pb-16 md:pb-0">
+      <div className="ml-0 md:ml-24 w-full overflow-x-hidden">
         <Hero />
         <About />
         <Skills />

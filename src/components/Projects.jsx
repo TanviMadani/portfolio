@@ -33,9 +33,9 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-16 bg-[#17191A] jagged-border jagged-border-dark">
+    <div id="projects" className="py-16 bg-background">
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#B8B8CA] mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
           My Projects
         </h2>
         
@@ -43,24 +43,25 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-[#17191A] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105"
+              className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 bg-card border-theme"
+              style={{ border: '1px solid var(--border)' }}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#B8B8CA] mb-2">{project.title}</h3>
-                <p className="text-[#B8B8CA] mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-primary">{project.title}</h3>
+                <p className="mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 bg-[#121315] text-[#B8B8CA] text-xs rounded-full">
+                    <span key={i} className="px-2 py-1 text-xs rounded-full bg-accent text-white">
                       {tech}
                     </span>
                   ))}
                 </div>
                 <a 
                   href={project.link} 
-                  className="inline-block px-4 py-2 bg-[#272930] text-[#B8B8CA] font-medium rounded hover:bg-[#121315] transition-colors"
+                  className="inline-block px-4 py-2 font-medium rounded transition-colors bg-secondary text-white hover-primary"
                 >
                   View Project
                 </a>
