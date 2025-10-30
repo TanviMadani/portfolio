@@ -18,8 +18,7 @@ const About = () => {
               process of turning ideas into functional applications that provide value to users.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-              projects, or expanding my knowledge through online courses and tech communities.
+              When I'm not coding, you can find me exploring new technologies, reading books or expanding my knowledge through online courses and tech communities.
             </p>
           </div>
           
@@ -34,9 +33,9 @@ const About = () => {
                 </div>
                 <div className="bg-cardBg p-4 rounded-lg shadow-md">
                   <h4 className="text-lg font-semibold text-text">Bachelor in Computer Science and Engineering</h4>
-                  <p className="text-text">Northern University Bangladesh (NUB)</p>
+                  <p className="text-text">Nirma University, Ahmedabad </p>
                   <div className="inline-block bg-secondary text-xs px-2 py-1 rounded-full mt-2">
-                    2020 - 2022
+                    2023 - 2027
                   </div>
                 </div>
               </div>
@@ -48,9 +47,9 @@ const About = () => {
                 </div>
                 <div className="bg-cardBg p-4 rounded-lg shadow-md">
                   <h4 className="text-lg font-semibold">Higher School Certificate (HSC)</h4>
-                  <p>Feni Government College</p>
+                  <p>Advait Vidyaniketan, Bharuch </p>
                   <div className="inline-block bg-secondary text-xs px-2 py-1 rounded-full mt-2">
-                    2020
+                    2021-2023
                   </div>
                 </div>
               </div>
@@ -62,9 +61,9 @@ const About = () => {
                 </div>
                 <div className="bg-cardBg p-4 rounded-lg shadow-md">
                   <h4 className="text-lg font-semibold">Secondary School Certificate (SSC)</h4>
-                  <p>Shaheen Academy School</p>
+                  <p>Shree Gattu Vidyalaya, Ankleshwar</p>
                   <div className="inline-block bg-secondarytext-xs px-2 py-1 rounded-full mt-2">
-                    2018
+                    2011-2021
                   </div>
                 </div>
               </div>
@@ -73,10 +72,10 @@ const About = () => {
             <h3 className="text-xl font-semibold my-6">Interests</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>Web Development</li>
-              <li>Machine Learning</li>
               <li>UI/UX Design</li>
-              <li>Open Source Contribution</li>
               <li>Problem Solving</li>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
             </ul>
           </div>
         </div>
