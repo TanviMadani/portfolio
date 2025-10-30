@@ -43,12 +43,11 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="py-16" style={{ 
-      backgroundColor: 'var(--background)', 
-      color: 'var(--text)'
+    <div id="skills" className="py-16 text-text" style={{ 
+      backgroundColor: 'var(--background)'
     }}>
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-text">
           Skills
         </h2>
         

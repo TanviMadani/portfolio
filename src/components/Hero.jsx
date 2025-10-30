@@ -15,11 +15,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="home" className="bg-[#17191A] min-h-screen px-4 md:px-16 flex items-center">
+    <div id="home" className="bg-background min-h-screen px-4 md:px-16 flex items-center">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 max-w-5xl mx-auto w-full">
         {/* Left side - Text content */}
         <div className="md:w-2/5 mb-6 md:mb-0">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#B8B8CA] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-text mb-6">
             Hii, I'm<br />
             <span className="block mt-2">Tanvi Madani</span>
           </h1>
