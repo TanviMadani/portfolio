@@ -1,35 +1,30 @@
 import React from 'react';
 
+
 const Projects = () => {
   const projects = [
     {
       title: 'EAT4U: Recipe Recommendation System',
       description: 'Developed a full-stack recipe platform with authentication, recipe CRUD, and review features. Integrated an AI-based recommendation engine for personalized recipe suggestions. Implemented error handling, logging, and security measures (rate limiting, CORS, helmet). Designed a responsive frontend with forms, reviews, and recommendation UI for better UX.',
       technologies: ['MERN Stack', 'JWT', 'Tailwind CSS', 'Python'],
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.postimg.cc/T3yM65d7/Screenshot-2025-11-01-141858.png',
       link: 'https://eat-4-u.vercel.app/'
     },
     {
       title: '5ive: AI-Powered Microlearning Platform ',
       description: 'Developed microlearning app delivering daily 5-minute AI-generated lessons. Added adaptive quizzes, flashcards, streak tracking, and gamification for engagement that improved user retention by 35%. Optimized caching with Redis, reducing API response time by 50%.',
       technologies: ['MERN Stack', 'Tailwind CSS', 'Redis', 'Groq API', 'JWT'],
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.postimg.cc/nLgqP5RZ/Screenshot-2025-11-01-143152.png',
       link: '#'
     },
     {
       title: 'Candy-Fall Frenzy',
       description: '• Created a Web-app and console game both with 20+ levels, lifelines, color-coded candies, sound effects.',
       technologies: ['JavaScript', 'HTML/CSS'],
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.postimg.cc/7YGmP3zG/Screenshot-2025-11-01-142810.png',
       link: 'https://candy-game-lemon.vercel.app/'
     },
-    {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio website showcasing projects, skills, and professional experience.',
-      technologies: ['React', 'Tailwind CSS', 'Vite'],
-      image: 'https://via.placeholder.com/300x200',
-      link: 'https://tanvi-madani-portfolio.vercel.app/'
-    }
+    
   ];
 
   return (

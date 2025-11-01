@@ -20,6 +20,14 @@ const About = () => {
             <p>
               When I'm not coding, you can find me exploring new technologies, reading books or expanding my knowledge through online courses and tech communities.
             </p>
+            <h3 className="text-xl font-semibold my-6">Interests</h3>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Web Development</li>
+              <li>UI/UX Design</li>
+              <li>Problem Solving</li>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+            </ul>
           </div>
           
           <div className="order-1 md:order-2">
@@ -62,21 +70,14 @@ const About = () => {
                 <div className="bg-cardBg p-4 rounded-lg shadow-md">
                   <h4 className="text-lg font-semibold">Secondary School Certificate (SSC)</h4>
                   <p>Shree Gattu Vidyalaya, Ankleshwar</p>
-                  <div className="inline-block bg-secondarytext-xs px-2 py-1 rounded-full mt-2">
+                  <div className="inline-block bg-secondary text-xs px-2 py-1 rounded-full mt-2">
                     2011-2021
                   </div>
                 </div>
               </div>
             </div>
             
-            <h3 className="text-xl font-semibold my-6">Interests</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Web Development</li>
-              <li>UI/UX Design</li>
-              <li>Problem Solving</li>
-              <li>Artificial Intelligence</li>
-              <li>Machine Learning</li>
-            </ul>
+            
           </div>
         </div>
       </div>
