@@ -44,19 +44,19 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="py-16 text-text " style={{ 
+    <div id="skills" className="py-16 text-text" style={{ 
       backgroundColor: 'var(--background)'
     }}>
-      <div className="container mx-auto px-4 md:pl-24 md:pr-16">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
           Skills
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-3 sm:gap-4 mx-auto max-w-6xl">
           {skills.map((skill, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-lg transition-all duration-300 aspect-square bg-card border-theme"
+              className="flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg transition-all duration-300 aspect-square bg-card border-theme"
               style={{ 
                 border: '1px solid var(--border)',
                 transform: 'translateY(0)',
@@ -71,14 +71,14 @@ const Skills = () => {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 rounded-full mb-2 p-2">
+              <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full mb-3 p-2">
                 <img 
                   src={skill.image} 
                   alt={skill.name} 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-sm sm:text-base font-medium text-center">
+              <span className="text-xs sm:text-sm md:text-base font-medium text-center">
                 {skill.name}
               </span>
             </div>

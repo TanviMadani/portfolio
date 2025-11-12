@@ -7,7 +7,6 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import ThemeToggle from './components/ThemeToggle'
-import MobileNav from './components/MobileNav'
 import { applyTheme } from './theme'
 import Achievements from './components/Achievements'
 
@@ -67,7 +66,7 @@ function App() {
     <div className={`relative overflow-x-hidden ${theme}`} style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
       <ThemeToggle onToggle={toggleTheme} currentTheme={theme} />
       <Navbar />
-      <div className="ml-0 md:ml-24 w-full overflow-x-hidden">
+      <div className="w-full overflow-x-hidden pt-16 md:pt-0 md:ml-24">
         <Hero />
         <About />
         <Skills />
