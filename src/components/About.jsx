@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="about" className="py-16 px-4 md:pl-24 md:pr-8 overflow-hidden" style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
       <div className="max-w-full mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 pb-4" style={{ borderBottom: '1px solid var(--border)' }}>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 pb-4 text-primary" style={{ borderBottom: '1px solid var(--border)' }}>
           About Me
         </h2>
 

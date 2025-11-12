@@ -18,10 +18,10 @@ const BriefcaseIcon = () => (
 );
 
 const CertificateIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6 text-primary mr-3">
-      <path fillRule="evenodd" d="M12.75 3a.75.75 0 0 0-1.5 0v1.5A1.5 1.5 0 0 1 9.75 6H6a.75.75 0 0 0 0 1.5h3.75a1.5 1.5 0 0 1 1.5 1.5v1.5A.75.75 0 0 0 12 11.25v6a.75.75 0 0 0 1.5 0v-6a.75.75 0 0 0-.75-.75V9A1.5 1.5 0 0 1 14.25 7.5H18a.75.75 0 0 0 0-1.5h-3.75a1.5 1.5 0 0 1-1.5-1.5V3ZM11.25 6h1.5v1.5h-1.5V6Z" clipRule="evenodd" />
-      <path d="M3.75 9.75a.75.75 0 0 0 0 1.5h3v9.75a.75.75 0 0 0 .75.75h10.5a.75.75 0 0 0 .75-.75V11.25h3a.75.75 0 0 0 0-1.5h-3v-1.5a.75.75 0 0 0-.75-.75H7.5a.75.75 0 0 0-.75.75v1.5h-3Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m1-4H8a2 2 0 00-2 2v12l4-2 4 2 4-2V6a2 2 0 00-2-2z" />
+</svg>
+
 );
 
 
@@ -29,7 +29,7 @@ const Achievements = () => {
   return (
     <div id="achievements" className="py-16 px-4 md:pl-24 md:pr-8 overflow-hidden" style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
       <div className="max-w-full mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 pb-4" style={{ borderBottom: '1px solid var(--border)' }}>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 pb-4 text-primary" style={{ borderBottom: '1px solid var(--border)' }}>
           Achievements & Roles
         </h2>
 
@@ -38,7 +38,7 @@ const Achievements = () => {
 
           {/* Hackathons Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-primary flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
               <TrophyIcon />
               Hackathons
             </h3>
@@ -48,7 +48,7 @@ const Achievements = () => {
                 <h4 className="text-lg font-semibold">
                   <span className="text-primary">First Prize Winner – "Breach 2025" — FinTech Hackathon (PDEU)</span>
                 </h4>
-                <span className="text-accent text-sm">March 2025</span>
+                <span className="text-secondary text-sm">March 2025</span>
                 
                 <ul className="list-disc list-inside space-y-2 mt-4">
                   <li><span className="font-medium">Project:</span> Automated Compliance Management System (<a href="#" className="text-primary hover:underline">Live Demo</a>)</li>
@@ -62,17 +62,18 @@ const Achievements = () => {
 
           {/* Position of Responsibility Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-primary flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
               <BriefcaseIcon />
               Positions of Responsibility
             </h3>
             <div className="space-y-6">
               {/* Role Card 1 */}
-              <div className="p-6 rounded-lg shadow-md border-l-4 border-primary" style={{ backgroundColor: 'var(--cardBg)' }}>
-                <h4 className="text-lg font-semibold flex justify-between">
-                  <span>Technical Director – Association of Computer Engineering Students (ACES)</span>
-                  <span className="text-accent text-sm flex-shrink-0 ml-4">Oct 2025 - Present</span>
+                <div className="p-6 rounded-lg shadow-md border-l-4 border-primary" style={{ backgroundColor: 'var(--cardBg)' }}>
+                <h4 className="text-lg font-semibold flex justify-between text-primary">
+                    <span>Technical Director – Association of Computer Engineering Students (ACES)</span>
                 </h4>
+                <span className="text-secondary text-sm">Oct 2025 - Present</span>
+
                 <ul className="list-disc list-inside space-y-1 mt-2">
                   <li>Organized technical events, workshops, and seminars, fostering collaborative learning.</li>
                 </ul>
@@ -80,10 +81,10 @@ const Achievements = () => {
 
               {/* Role Card 2 */}
               <div className="p-6 rounded-lg shadow-md border-l-4 border-primary" style={{ backgroundColor: 'var(--cardBg)' }}>
-                <h4 className="text-lg font-semibold flex justify-between">
+                <h4 className="text-lg font-semibold flex justify-between text-primary">
                   <span>Executive Member – Association of Computer Engineering Students (ACES)</span>
-                  <span className="text-accent text-sm flex-shrink-0 ml-4">Jan 2025 - Oct 2025</span>
                 </h4>
+                <span className="text-secondary text-sm">Jan 2025 - Oct 2025</span>
                 {/* You can add description bullet points here if you have any */}
               </div>
             </div>
@@ -91,7 +92,7 @@ const Achievements = () => {
 
           {/* Certifications Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-primary flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
               <CertificateIcon />
               Certifications
             </h3>

@@ -48,7 +48,7 @@ const Skills = () => {
       backgroundColor: 'var(--background)'
     }}>
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-text">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
           Skills
         </h2>
         
