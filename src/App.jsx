@@ -5,11 +5,11 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import Resume from './components/Resume'
 import Contact from './components/Contact'
 import ThemeToggle from './components/ThemeToggle'
 import MobileNav from './components/MobileNav'
 import { applyTheme } from './theme'
+import Achievements from './components/Achievements'
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -72,7 +72,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Resume />
+        <Achievements />
         <Contact />
       </div>
     </div>

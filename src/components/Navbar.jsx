@@ -31,11 +31,11 @@ const Navbar = () => {
           </svg>
           <span className="text-xs mt-1">Projects</span>
         </a>
-        <a href="#resume" className="text-white hover:text-primary transition-colors duration-300 flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        <a href="#achievements" className="text-white hover:text-primary transition-colors duration-300 flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-6 w-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 21h8m-4-4a5 5 0 0 0 5-5V4H7v8a5 5 0 0 0 5 5zm7-13h1a2 2 0 0 1 2 2v1a4 4 0 0 1-4 4h-1M5 4H4a2 2 0 0 0-2 2v1a4 4 0 0 0 4 4h1" />
           </svg>
-          <span className="text-xs mt-1">Resume</span>
+          <span className="text-xs mt-1">Achievements</span>
         </a>
         <a href="#contact" className="text-white hover:text-primary transition-colors duration-300 flex flex-col items-center">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,7 +72,7 @@ const Navbar = () => {
             <a href="#about" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>About</a>
             <a href="#skills" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Skills</a>
             <a href="#projects" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Projects</a>
-            <a href="#resume" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Resume</a>
+            <a href="#achievements" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Achievements</a>
             <a href="#contact" className="py-2 hover:text-primary" onClick={() => setIsOpen(false)} style={{ color: 'var(--text)' }}>Contact</a>
           </div>
         </div>

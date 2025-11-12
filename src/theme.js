@@ -1,13 +1,13 @@
 // Theme configuration based on the provided color palette
 export const theme = {
   light: {
-    primary: '#87CEEB',    
-    secondary: '#84cdee',   
+    primary: '#1E90FF',    
+    secondary: '#4169E1',   
     accent: '#50b8e7',     
     background: '#edf7fc', 
     text: '#333333',       
     cardBg: '#dcf0fa',      
-    border: '#b9e2f5',      
+    border: '#191970',      
   },
   dark: {
     primary: '#1E90FF',     // Dodger Blue

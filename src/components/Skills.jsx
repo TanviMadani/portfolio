@@ -44,7 +44,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="py-16 text-text" style={{ 
+    <div id="skills" className="py-16 text-text " style={{ 
       backgroundColor: 'var(--background)'
     }}>
       <div className="container mx-auto px-4 md:pl-24 md:pr-16">
@@ -52,7 +52,7 @@ const Skills = () => {
           Skills
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 mx-auto">
           {skills.map((skill, index) => (
             <div 
               key={index} 
@@ -71,7 +71,7 @@ const Skills = () => {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-2 p-2">
+              <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 rounded-full mb-2 p-2">
                 <img 
                   src={skill.image} 
                   alt={skill.name} 

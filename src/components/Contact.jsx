@@ -69,8 +69,19 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          
-          
+          {/* Right side - Quick Links */}
+          <div className="p-6 rounded-lg shadow-lg bg-card border-theme flex flex-col items-start md:items-center justify-center" data-aos="fade-left" style={{ border: '1px solid var(--border)' }}>
+            <h3 className="text-2xl font-semibold mb-6 text-primary">Quick Links</h3>
+            <a
+              href="#resume"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary text-white hover-primary transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>View Resume</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
