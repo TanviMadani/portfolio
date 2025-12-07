@@ -52,7 +52,7 @@ const Skills = () => {
           Skills
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-3 sm:gap-4 mx-auto max-w-6xl">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-2 sm:gap-4 mx-auto max-w-6xl">
           {skills.map((skill, index) => (
             <div 
               key={index} 
@@ -71,7 +71,7 @@ const Skills = () => {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full mb-3 p-2">
+              <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full mb-3 p-2">
                 <img 
                   src={skill.image} 
                   alt={skill.name} 

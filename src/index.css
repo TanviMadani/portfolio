@@ -202,9 +202,6 @@
     font-size: 1.75rem !important;
   }
 
-  .grid {
-    grid-template-columns: 1fr !important;
-  }
 
   .flex-col-reverse {
     flex-direction: column-reverse !important;
