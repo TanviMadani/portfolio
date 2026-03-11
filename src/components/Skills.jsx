@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
 const Skills = () => {
-  const [theme, setTheme] = useState('light');
+  const [THEME, SET_THEME] = useState('light');
 
   useEffect(() => {
     // Get the current theme from localStorage
     const currentTheme = localStorage.getItem('theme-mode') || 'light';
-    setTheme(currentTheme);
+    SET_THEME(currentTheme);
 
     // Listen for theme changes
     const handleThemeChange = () => {
-      setTheme(localStorage.getItem('theme-mode') || 'light');
+      SET_THEME(localStorage.getItem('theme-mode') || 'light');
     };
     
     window.addEventListener('storage', handleThemeChange);

@@ -7,8 +7,7 @@ const Hero = () => {
   // Add smooth scroll effect when scrolling down
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      // You can add additional scroll effects here if needed
+      const SCROLL_Y = window.scrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -56,7 +55,7 @@ const Hero = () => {
         </div>
         
         {/* Image */}
-        <div className="md:w-2/5 flex justify-center relative">
+        <div className="md:w-2/5 flex flex-col items-center justify-center relative">
           <div className="relative mx-auto">
             {/* Circular image */}
             <div className="relative z-10 overflow-hidden w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full">
@@ -67,9 +66,13 @@ const Hero = () => {
               />
             </div>
           </div>
+          {/* Social Links - Below image on small screens */}
+          <div className="block md:hidden mt-4">
+            <SocialLinks />
+          </div>
           
           {/* Social Links - Right side */}
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 md:translate-x-full md:mr-[-40px]">
+          <div className="hidden md:block md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 md:translate-x-full md:mr-[-40px]">
             <SocialLinks />
           </div>
         </div>

@@ -3,20 +3,20 @@ export const theme = {
   light: {
     primary: '#1E90FF',    
     secondary: '#4169E1',   
-    accent: '#50b8e7',     
+    accent: '#00008B',     
     background: '#edf7fc', 
     text: '#333333',       
     cardBg: '#dcf0fa',      
     border: '#191970',      
   },
   dark: {
-    primary: '#1E90FF',     // Dodger Blue
-    secondary: '#4169E1',   // Royal Blue
-    accent: '#00008B',      // Dark Blue
+    primary: '#1E90FF',     
+    secondary: '#4169E1', 
+    accent: '#50b8e7',     
     background: '#101010',  
-    text: '#FFFFFF',        // White
-    cardBg: '#1F2123',      // Darker Navy Blue
-    border: '#191970',      // Midnight Blue
+    text: '#FFFFFF',        
+    cardBg: '#1F2123',     
+    border: '#191970',      
   }
 };
 

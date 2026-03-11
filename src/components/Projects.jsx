@@ -18,8 +18,15 @@ const Projects = () => {
       link: '#'
     },
     {
+      title: 'impactXI',
+      description: 'Developed a data-driven Impact Metric (IM) using IPL ball-by-ball data from 1,170 matches to quantify player influence on match outcomes. Designed a Performance × Match Context × Game Pressure model, normalized to a 0–100 scale, and implemented a rolling last-10-innings algorithm with visualizations to analyze impact beyond traditional stats.',
+      technologies: ['ReactJS', 'FastAPI', 'Python', 'Scikit-learn', 'IPL Ball-by-Ball Dataset'],
+      image: 'https://i.postimg.cc/bv3rsX8Q/Screenshot-2026-03-11-113634.png',
+      link: 'https://impact-xi-bay.vercel.app/'
+    },
+    {
       title: 'Candy-Fall Frenzy',
-      description: '• Created a Web-app and console game both with 20+ levels, lifelines, color-coded candies, sound effects.',
+      description: 'Created a Web-app and console game both with 20+ levels, lifelines, color-coded candies, sound effects.',
       technologies: ['JavaScript', 'HTML/CSS'],
       image: 'https://i.postimg.cc/7YGmP3zG/Screenshot-2025-11-01-142810.png',
       link: 'https://candy-game-lemon.vercel.app/'

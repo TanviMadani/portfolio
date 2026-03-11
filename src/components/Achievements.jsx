@@ -38,7 +38,7 @@ const Achievements = () => {
 
           {/* Hackathons Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-text flex items-center">
               <TrophyIcon />
               Hackathons
             </h3>
@@ -62,7 +62,7 @@ const Achievements = () => {
 
           {/* Position of Responsibility Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-text flex items-center">
               <BriefcaseIcon />
               Positions of Responsibility
             </h3>
@@ -92,7 +92,7 @@ const Achievements = () => {
 
           {/* Certifications Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
+            <h3 className="text-2xl font-semibold mb-6 text-text flex items-center">
               <CertificateIcon />
               Certifications
             </h3>
