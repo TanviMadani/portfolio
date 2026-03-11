@@ -22,8 +22,8 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-text mb-6">
             Hii, I'm<br />
             <span className="block mt-2">Tanvi Madani</span>
-            <WordRotate 
-              words={["Web Developer", "UI/UX Designer", "Full Stack Developer", "React Enthusiast"]} 
+            <WordRotate
+              words={["Web Developer", "UI/UX Designer", "Full Stack Developer", "React Enthusiast"]}
               className="text-primary text-3xl md:text-4xl mt-2"
             />
           </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 mt-4">
               {/* View Resume (opens in new tab) */}
               <a
-                href="https://drive.google.com/file/d/1TQDIfQPH8FM9ATGyxV1rmj_ifIXmPzUt/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1byj_KXMmq_-UVwvdFpSBa083GKp84GPD/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary text-white hover-primary transition-colors"
@@ -53,15 +53,15 @@ const Hero = () => {
           </div>
           <div className="w-full border-t border-dashed border-[#272930] mt-6"></div>
         </div>
-        
+
         {/* Image */}
         <div className="md:w-2/5 flex flex-col items-center justify-center relative">
           <div className="relative mx-auto">
             {/* Circular image */}
             <div className="relative z-10 overflow-hidden w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full">
-              <img 
-                src={avatar} 
-                alt="Profile" 
+              <img
+                src={avatar}
+                alt="Profile"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -70,7 +70,7 @@ const Hero = () => {
           <div className="block md:hidden mt-4">
             <SocialLinks />
           </div>
-          
+
           {/* Social Links - Right side */}
           <div className="hidden md:block md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 md:translate-x-full md:mr-[-40px]">
             <SocialLinks />
