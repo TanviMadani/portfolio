@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 mt-4">
               {/* View Resume (opens in new tab) */}
               <a
-                href="https://drive.google.com/file/d/1jnF60dEd6FsLreH_KGg4PRRW2yqYh0TG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TQDIfQPH8FM9ATGyxV1rmj_ifIXmPzUt/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary text-white hover-primary transition-colors"
