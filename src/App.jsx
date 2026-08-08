@@ -69,9 +69,8 @@ function App() {
   return (
     <div className={`relative overflow-x-hidden ${theme}`} style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
       {isLoading && <Loading onComplete={() => setIsLoading(false)} />}
-      <ThemeToggle onToggle={toggleTheme} currentTheme={theme} />
       <Navbar />
-      <div className="w-full overflow-x-hidden pt-16 md:pt-0 md:ml-24">
+      <div className="w-full overflow-x-hidden pt-16 md:pt-0 md:ml-12">
         <Landing />
         <About />
         <Skills />

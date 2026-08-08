@@ -1,16 +1,26 @@
 import React from 'react';
 import photo from '../assets/mainphoto.png';
-import SocialLinks from './SocialLinks';
+import ConnectRibbon from './ConnectRibbon';
 
 const Landing = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center bg-background">
+    <section
+      className="
+        relative
+        min-h-screen
+        w-full
+        overflow-hidden
+        flex
+        items-center
+        bg-background
+      "
+    >
 
       {/* ================= BACKGROUND HELLO ================= */}
       <h1
         className="
           absolute
-          top-[8%]
+          top-[-7%]
           left-[9%]
           text-[20vw]
           md:text-[210px]
@@ -40,12 +50,15 @@ const Landing = () => {
           md:px-10
           pt-20
           md:pt-10
-          pb-12
+          pb-32
+
           flex
           flex-col
           md:flex-row
+
           items-center
           justify-center
+
           gap-10
           md:gap-16
           lg:gap-20
@@ -61,6 +74,9 @@ const Landing = () => {
             justify-center
             md:justify-end
             relative
+
+            translate-y-12
+            md:translate-y-16
           "
         >
 
@@ -82,7 +98,7 @@ const Landing = () => {
             "
           />
 
-          {/* Profile */}
+          {/* Profile Image */}
           <img
             src={photo}
             alt="Tanvi Madani"
@@ -118,6 +134,8 @@ const Landing = () => {
             md:items-start
             text-center
             md:text-left
+
+            md:-translate-y-2
           "
         >
 
@@ -140,7 +158,7 @@ const Landing = () => {
           </h2>
 
 
-          {/* Static Role */}
+          {/* Role */}
           <p
             className="
               mt-5
@@ -171,11 +189,11 @@ const Landing = () => {
           </p>
 
 
-          {/* Resume */}
+          {/* ================= RESUME BUTTON ================= */}
           <div className="mt-7">
 
             <a
-              href="https://drive.google.com/file/d/10O1mklegn0jvYy1JVd9uIIRwPJSyMagl/view?usp=drive_link"
+              href="https://drive.google.com/uc?export=download&id=10O1mklegn0jvYy1JVd9uIIRwPJSyMagl"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -190,10 +208,6 @@ const Landing = () => {
                 font-medium
                 shadow-lg
                 shadow-secondary/20
-                hover:scale-105
-                hover-primary
-                transition-all
-                duration-300
               "
             >
 
@@ -209,7 +223,7 @@ const Landing = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2-2z"
                 />
               </svg>
 
@@ -219,15 +233,13 @@ const Landing = () => {
 
           </div>
 
-
-          {/* Social Links */}
-          <div className="mt-8">
-            <SocialLinks />
-          </div>
-
         </div>
 
       </div>
+
+
+      {/* ================= CONNECT RIBBON ================= */}
+      <ConnectRibbon topOffset="76%" />
 
     </section>
   );
