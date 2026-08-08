@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -8,9 +7,14 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import ThemeToggle from './components/ThemeToggle'
 import { applyTheme } from './theme'
+import Landing from './components/Landing'
 import Achievements from './components/Achievements'
+import Loading from './components/Loading'
+import Experience from './components/Experience'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme-mode');
     return savedTheme || 'dark';
@@ -30,7 +34,7 @@ function App() {
   useEffect(() => {
     // Add smooth scrolling to all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -49,7 +53,7 @@ function App() {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
-        
+
         if (elementTop < windowHeight - elementVisible) {
           element.classList.add('active');
         }
@@ -58,20 +62,22 @@ function App() {
 
     window.addEventListener('scroll', revealElementsOnScroll);
     revealElementsOnScroll(); // Check on initial load
-    
+
     return () => window.removeEventListener('scroll', revealElementsOnScroll);
   }, []);
 
   return (
     <div className={`relative overflow-x-hidden ${theme}`} style={{ backgroundColor: 'var(--background)', color: 'var(--text)' }}>
+      {isLoading && <Loading onComplete={() => setIsLoading(false)} />}
       <ThemeToggle onToggle={toggleTheme} currentTheme={theme} />
       <Navbar />
       <div className="w-full overflow-x-hidden pt-16 md:pt-0 md:ml-24">
-        <Hero />
+        <Landing />
         <About />
         <Skills />
         <Projects />
         <Achievements />
+        <Experience />
         <Contact />
       </div>
     </div>

@@ -31,6 +31,13 @@ const Projects = () => {
       image: 'https://i.postimg.cc/7YGmP3zG/Screenshot-2025-11-01-142810.png',
       link: 'https://candy-game-lemon.vercel.app/'
     },
+    {
+      title: 'Automated Compliance Management System',
+      description: '1st Prize winner at Breach 2025, a FinTech Hackathon by PDEU. Built as a 5-member team to automate compliance checks for financial regulations, cutting manual review effort by an average of 70%. Deployed with a Vercel frontend and Render backend.',
+      technologies: ['MERN Stack', 'REST APIs', 'Vercel', 'Render'],
+      image: 'https://placehold.co/600x400/1E90FF/FFFFFF?text=Compliance+System',
+      link: '#'
+    },
     
   ];
 

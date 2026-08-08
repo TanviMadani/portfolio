@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { SkillText } from './sub/SkillText';
+import { SkillDataProvider } from './sub/SkillDataProvider';
 
 const Skills = () => {
-  const [THEME, SET_THEME] = useState('light');
-
-  useEffect(() => {
-    // Get the current theme from localStorage
-    const currentTheme = localStorage.getItem('theme-mode') || 'light';
-    SET_THEME(currentTheme);
-
-    // Listen for theme changes
-    const handleThemeChange = () => {
-      SET_THEME(localStorage.getItem('theme-mode') || 'light');
-    };
-    
-    window.addEventListener('storage', handleThemeChange);
-    return () => window.removeEventListener('storage', handleThemeChange);
-  }, []);
-
   const skills = [
     { name: 'C', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
     { name: 'C++', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
@@ -43,49 +29,42 @@ const Skills = () => {
     { name: 'Jupyter', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' },
   ];
 
+  // Helper array chunking to build the inverted pyramid look
+  const rowCounts = [7, 6, 5, 4, 1];
+  let startIndex = 0;
+  const chunkedSkills = rowCounts.map(count => {
+    const chunk = skills.slice(startIndex, startIndex + count);
+    startIndex += count;
+    return chunk;
+  });
+
   return (
-    <div id="skills" className="py-16 text-text" style={{ 
-      backgroundColor: 'var(--background)'
-    }}>
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
-          Skills
-        </h2>
-        
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-2 sm:gap-4 mx-auto max-w-6xl">
-          {skills.map((skill, index) => (
-            <div 
-              key={index} 
-              className="flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg transition-all duration-300 aspect-square bg-card border-theme"
-              style={{ 
-                border: '1px solid var(--border)',
-                transform: 'translateY(0)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
-              <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full mb-3 p-2">
-                <img 
-                  src={skill.image} 
-                  alt={skill.name} 
-                  className="w-full h-full object-contain"
-                />
+    <section
+      id="skills"
+      style={{ backgroundColor: 'var(--background)' }}
+      className="w-full h-full relative py-20 text-text"
+    >
+      <div className="reveal flex flex-col items-center justify-center gap-3 w-full">
+        <div style={{ transform: "scale(0.9)" }} className="flex flex-col items-center justify-center w-full">
+          <SkillText />
+
+          <div className="flex flex-col items-center justify-center w-full max-w-[90%] z-10 px-4 mt-8 gap-4 md:gap-8">
+            {chunkedSkills.map((row, rowIndex) => (
+              <div key={`row-${rowIndex}`} className="flex flex-row justify-center flex-wrap gap-4 md:gap-8 lg:gap-12 items-center w-full">
+                {row.map((skill, i) => (
+                  <SkillDataProvider
+                    key={`${skill.name}-${i}`}
+                    src={skill.image}
+                    name={skill.name}
+                    index={i}
+                  />
+                ))}
               </div>
-              <span className="text-xs sm:text-sm md:text-base font-medium text-center">
-                {skill.name}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

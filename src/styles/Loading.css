@@ -1,0 +1,33 @@
+@keyframes pulseHeight {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1.2); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.loaderGame-in {
+  transform-origin: bottom;
+}
+
+/* Make sure text doesn't wrap and has nice spacing */
+.loading-marquee {
+  user-select: none;
+  display: flex;
+  width: 200%;
+}
+
+.loading-button {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
