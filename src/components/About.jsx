@@ -155,24 +155,7 @@ export const About = () => {
         >
           <div>
 
-            {/* Small Label */}
-            <span
-              className="
-                text-[#1683FF]
-                font-semibold
-                tracking-wider
-                text-xs
-                uppercase
-                px-3
-                py-1
-                bg-[#1683FF]/10
-                border
-                border-[#1683FF]/20
-                rounded-full
-              "
-            >
-              About Me
-            </span>
+            
 
             {/* Main Heading */}
             <h2
@@ -192,19 +175,7 @@ export const About = () => {
 
           </div>
 
-          {/* Website Text */}
-          <span
-            className="
-              hidden
-              sm:inline-block
-              text-xs
-              text-gray-500
-              font-mono
-            "
-          >
-            tanvi-madani.dev
-          </span>
-
+          
         </div>
 
 
@@ -458,17 +429,6 @@ export const About = () => {
 
               </span>
 
-
-              <span
-                className="
-                  text-[10px]
-                  text-[#1683FF]
-                  font-normal
-                  normal-case
-                "
-              >
-                {education.length} Qualifications
-              </span>
 
             </h3>
 
