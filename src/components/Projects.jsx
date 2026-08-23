@@ -1,19 +1,24 @@
 import React from 'react';
-
+import devdeployImg from '../assets/devdeploy.png';
+import fiveImg from '../assets/5ive.png';
+import eat4uImg from '../assets/eat4u.png';
+import impactXIImg from '../assets/impactXI.png';
+import musicgenImg from '../assets/musicgen.png';
+import cricketImg from '../assets/cricket-dahsboard.png';
+import sequenceImg from '../assets/sequence.png';
+import candyFallImg from '../assets/candy-fall-frenzy.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'EAT4U: Recipe Recommendation System',
+      title: 'DevDeploy: Automated CI/CD Deployment Platform ',
       description:
-        'Developed a full-stack recipe platform with authentication, recipe CRUD, and review features. Integrated an AI-based recommendation engine for personalized recipe suggestions.',
-      technologies: ['MERN Stack', 'Tailwind CSS', 'JWT', 'Python'],
-      image:
-        'https://i.postimg.cc/T3yM65d7/Screenshot-2025-11-01-141858.png',
-      link: 'https://eat-4-u.vercel.app/',
-      github: 'https://github.com/TanviMadani/EAT4U',
+        'Developed a full-stack deployment platform that automates CI/CD workflows through GitHub Webhooks.Implemented asynchronous build and deployment job processing using Redis and BullMQ with real - time deployment status tracking.',
+      technologies: ['Redis', 'BullMQ', 'GitHub Webhooks', 'Cloudflare', 'React', 'Node.js', 'Express.js'],
+      image: devdeployImg,
+      link: '#',
+      github: 'https://github.com/TanviMadani/DevDeploy',
     },
-
     {
       title: '5ive: AI-Powered Microlearning Platform',
       description:
@@ -25,12 +30,20 @@ const Projects = () => {
         'OpenAI API',
         'JWT',
       ],
-      image:
-        'https://i.postimg.cc/nLgqP5RZ/Screenshot-2025-11-01-143152.png',
-      link: '#',
+      image: fiveImg,
+      link: 'https://5ive-learning.netlify.app/',
       github: 'https://github.com/TanviMadani/5ive',
     },
 
+    {
+      title: 'EAT4U: Recipe Recommendation System',
+      description:
+        'Developed a full-stack recipe platform with authentication, recipe CRUD, and review features. Integrated an AI-based recommendation engine for personalized recipe suggestions.',
+      technologies: ['MERN Stack', 'Tailwind CSS', 'JWT', 'Python'],
+      image: eat4uImg,
+      link: 'https://eat-4-u.vercel.app/',
+      github: 'https://github.com/TanviMadani/EAT4U',
+    },
     {
       title: 'impactXI: ImpactMetric for Cricketers',
       description:
@@ -42,8 +55,7 @@ const Projects = () => {
         'Scikit-learn',
         'IPL Dataset',
       ],
-      image:
-        'https://i.postimg.cc/bv3rsX8Q/Screenshot-2026-03-11-113634.png',
+      image: impactXIImg,
       link: 'https://impact-xi-bay.vercel.app/',
       github: 'https://github.com/TanviMadani/impactXI',
     },
@@ -60,30 +72,10 @@ const Projects = () => {
         'PyTorch',
         'Streamlit',
       ],
-      image:
-        'https://placehold.co/600x400/1E90FF/FFFFFF?text=MusicGen',
+      image: musicgenImg,
       link: '#',
       github: 'https://github.com/TanviMadani/MusicGen.git',
     },
-
-    {
-      title: 'FinGenius',
-      description:
-        'Built a Retrieval-Augmented Generation system that ingests company and regulatory documents, indexes them with FAISS, and uses a multi-agent LLM pipeline to generate structured compliance reports, SWOT analyses, and scored audit reports enriched with live financial data.',
-      technologies: [
-        'RAG',
-        'LLMs',
-        'Vector Databases',
-        'LangChain',
-        'Python',
-        'Groq LLM API',
-      ],
-      image:
-        'https://placehold.co/600x400/1E90FF/FFFFFF?text=FinGenius',
-      link: '#',
-      github: 'https://github.com/TanviMadani/FinGenius-AI.git',
-    },
-
     {
       title: 'Cricket-Analysis-Dashboard',
       description:
@@ -94,11 +86,20 @@ const Projects = () => {
         'Dashboard Design',
         'IPL Dataset',
       ],
-      image:
-        'https://placehold.co/600x400/1E90FF/FFFFFF?text=Cricket+Analysis',
+      image: cricketImg,
       link: '#',
       github:
         'https://github.com/TanviMadani/Cricket-Analysis-Tableau.git',
+    },
+    {
+      title: 'Sequence-Multiplayer Game',
+      description:
+        'Real-time multiplayer board game (React + Socket.IO + Express) with server-authoritative state, persistent reconnection, and Docker-based deployment; fixed critical game-logic and information-leakage vulnerabilities in the win-detection and networking layers.',
+      technologies: [
+        'TypeScript', 'ReactJS', 'Node.js', 'Express.js', 'Docker', 'WebSockets'],
+      image: sequenceImg,
+      link: 'https://sequence-multiplayer-game-production.up.railway.app/',
+      github: 'https://github.com/TanviMadani/Sequence-Multiplayer-Game.git',
     },
 
     {
@@ -106,10 +107,9 @@ const Projects = () => {
       description:
         'Created a web-app and console game featuring 20+ levels, lifelines, color-coded candies, and sound effects.',
       technologies: ['JavaScript', 'HTML/CSS'],
-      image:
-        'https://i.postimg.cc/7YGmP3zG/Screenshot-2025-11-01-142810.png',
+      image: candyFallImg,
       link: 'https://candy-game-lemon.vercel.app/',
-      github: '',
+      github: 'https://github.com/TanviMadani/Candy-Game.git',
     },
   ];
 
@@ -119,11 +119,11 @@ const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
           My Projects
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 bg-card border-theme"
               style={{ border: '1px solid var(--border)' }}
               data-aos="fade-up"
@@ -141,12 +141,16 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <a
-                    href={project.link}
-                    className="inline-block px-4 py-2 font-medium rounded transition-colors bg-secondary text-white hover-primary"
-                  >
-                    View Project
-                  </a>
+                  {project.link && project.link !== '#' && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 font-medium rounded transition-colors bg-secondary text-white hover-primary"
+                    >
+                      Live Link
+                    </a>
+                  )}
 
                   {project.github && (
                     <a
@@ -170,7 +174,7 @@ const Projects = () => {
                   )}
                 </div>
               </div>
-              
+
             </div>
           ))}
         </div>
