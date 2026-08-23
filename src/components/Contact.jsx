@@ -75,7 +75,7 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-3">
               {/* View Resume (opens in new tab) */}
               <a
-                href="https://drive.google.com/file/d/10O1mklegn0jvYy1JVd9uIIRwPJSyMagl/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1H3KeEJkg9ZRhHRuw5GdW4FCIt2pqbdAJ/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full bg-secondary text-white hover-primary transition-colors w-full sm:w-auto"
@@ -88,7 +88,7 @@ const Contact = () => {
 
               {/* Download Resume */}
               <a
-                href="https://drive.google.com/uc?export=download&id=10O1mklegn0jvYy1JVd9uIIRwPJSyMagl"
+                href="https://drive.google.com/uc?export=download&id=1H3KeEJkg9ZRhHRuw5GdW4FCIt2pqbdAJ"
                 download="Tanvi_Madani_Resume"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors w-full sm:w-auto"
               >

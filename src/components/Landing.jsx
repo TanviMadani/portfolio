@@ -193,7 +193,7 @@ const Landing = () => {
           <div className="mt-7">
 
             <a
-              href="https://drive.google.com/uc?export=download&id=10O1mklegn0jvYy1JVd9uIIRwPJSyMagl"
+              href="https://drive.google.com/file/d/1H3KeEJkg9ZRhHRuw5GdW4FCIt2pqbdAJ/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="
