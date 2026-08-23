@@ -198,7 +198,7 @@ const Landing = () => {
               rel="noopener noreferrer"
               className="
                 inline-flex
-                items-center
+                items-centers
                 gap-3
                 px-7
                 py-3.5
