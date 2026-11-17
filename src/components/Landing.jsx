@@ -1,6 +1,7 @@
 import React from 'react';
 import photo from '../assets/mainphoto.png';
 import ConnectRibbon from './ConnectRibbon';
+import { RESUME_LINKS } from '../constants/links';
 
 const Landing = () => {
   return (
@@ -193,7 +194,7 @@ const Landing = () => {
           <div className="mt-7">
 
             <a
-              href="https://drive.google.com/file/d/1H3KeEJkg9ZRhHRuw5GdW4FCIt2pqbdAJ/view?usp=drive_link"
+              href={RESUME_LINKS.view}
               target="_blank"
               rel="noopener noreferrer"
               className="

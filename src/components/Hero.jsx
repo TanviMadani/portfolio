@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import avatar from '../assets/photo.png';
 import SocialLinks from './SocialLinks';
-import { WordRotate } from "./ui/WordRotate"
+import { WordRotate } from "./ui/WordRotate";
+import { RESUME_LINKS } from '../constants/links';
 
 const Hero = () => {
   // Add smooth scroll effect when scrolling down
@@ -36,7 +37,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 mt-4">
               {/* View Resume (opens in new tab) */}
               <a
-                href="https://drive.google.com/file/d/1byj_KXMmq_-UVwvdFpSBa083GKp84GPD/view?usp=sharing"
+                href={RESUME_LINKS.view}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary text-white hover-primary transition-colors"

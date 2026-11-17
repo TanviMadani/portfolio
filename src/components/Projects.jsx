@@ -60,7 +60,7 @@ const Projects = () => {
       github: 'https://github.com/TanviMadani/impactXI',
     },
 
-    {
+    /*{
       title: 'MusicGen',
       description:
         "Built an end-to-end AI music generation system using an LLM agent to plan structured song compositions and Meta's MusicGen model to render and stitch them into full tracks. Exposed the system through a FastAPI backend and Streamlit UI.",
@@ -75,7 +75,7 @@ const Projects = () => {
       image: musicgenImg,
       link: '#',
       github: 'https://github.com/TanviMadani/MusicGen.git',
-    },
+    },*/
     {
       title: 'Cricket-Analysis-Dashboard',
       description:

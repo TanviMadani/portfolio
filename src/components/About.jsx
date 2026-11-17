@@ -24,83 +24,7 @@ export const About = () => {
         "bg-[#1683FF]/10 text-[#1683FF] border-[#1683FF]/20",
     },
 
-    {
-      title: "UI/UX Design",
-      subtitle: "Intuitive Interfaces",
-      icon: (
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 15l6 6m-11-3a8 8 0 100-16 8 8 0 000 16z"
-          />
-        </svg>
-      ),
-      iconBg:
-        "bg-[#3B82F6]/10 text-[#3B82F6] border-[#3B82F6]/20",
-    },
 
-    {
-      title: "Problem Solving",
-      subtitle: "DSA & Algorithms",
-      icon: (
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 6v12m6-6H6"
-          />
-          <circle
-            cx="12"
-            cy="12"
-            r="9"
-            strokeWidth={2}
-          />
-        </svg>
-      ),
-      iconBg:
-        "bg-[#2563EB]/10 text-[#60A5FA] border-[#2563EB]/20",
-    },
-
-    {
-      title: "AI & Machine Learning",
-      subtitle: "Intelligent Systems",
-      icon: (
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48l2.12 2.12m0-12.72l-2.12 2.12m-8.48 8.48l-2.12 2.12"
-          />
-          <circle
-            cx="12"
-            cy="12"
-            r="4"
-            strokeWidth={2}
-          />
-        </svg>
-      ),
-      iconBg:
-        "bg-[#60A5FA]/10 text-[#60A5FA] border-[#60A5FA]/20",
-    },
   ];
 
   const education = [
@@ -155,7 +79,7 @@ export const About = () => {
         >
           <div>
 
-            
+
 
             {/* Main Heading */}
             <h2
@@ -175,7 +99,7 @@ export const About = () => {
 
           </div>
 
-          
+
         </div>
 
 
